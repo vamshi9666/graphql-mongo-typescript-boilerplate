@@ -12,13 +12,7 @@
   },
   "author": "",
   "license": "ISC",
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn run lint:fix && yarn format",
-      "pre-push": "yarn test "
-    }
-  },
+  
   "dependencies": {
     "@typegoose/typegoose": "^7.3.2",
     "apollo-server": "^2.16.1",
@@ -48,5 +42,12 @@
     "prettier": "^2.0.5",
     "ts-node": "8.5.2",
     "typescript": "^3.9.7"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "yarn run lint:fix && yarn format",
+      "pre-push": "yarn test "
+    }
   }
 }
