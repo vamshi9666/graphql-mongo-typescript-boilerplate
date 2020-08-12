@@ -49,5 +49,12 @@
       "pre-commit": "yarn run lint:fix && yarn format",
       "pre-push": "yarn test "
     }
+  },
+  
+  "lint-staged": {
+    "*.+(ts|tsx)": [
+      "npm run eslint:fix",
+      "prettier --write \"**/*.+ts\""
+    ]
   }
 }
